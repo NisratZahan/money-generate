@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-4 my-4">
+    <header class="text-[#31A5AC]  text-center text-5xl bg-white py-9 text-bold">
+        Money Master 💰
+    </header>
+   
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto ">
+           <div class="">
+                <img src="img.png" alt="">
+            </div>
+            
+                <div class="bg-[#F8F8F8] text-center ">
+                    
+                        <h1 class="text-[#000] text-lg mt-4 md:text-2xl font-medium">Income</h1>
+                        <label class="font-medium text-lg md:text-xl mr-2">Income:
+                            <input type="text" class="text-[#000] text-lg font-medium outline-none
+                            bg-[#DCDCDC]
+                            rounded-sm ml-2 mt-2 mb-2 py-2 px-4 " id="income-Amount" ></label>
+                        
+                   
+                 
+                        <h1 class="text-[#000] text-5xl mt-14 ">Expenses</h1>
+                        <label class="font-medium text-lg md:text-xl mr-2">Food:
+                            <input type="text" class="text-[#000] text-lg font-medium outline-none
+                            bg-[#DCDCDC]
+                            rounded-sm ml-2 mt-2 mb-2 py-2 px-4 "  id="food-Amount"></label>
+                        <div>
+                            <label class="font-medium text-lg md:text-xl mr-2">
+                            Rent:
+                            <input type="text" class="text-[#000] text-lg font-medium outline-none
+                            bg-[#DCDCDC]
+                            rounded-sm ml-2 mt-2 mb-2 py-2 px-4" id="rent-Amount" ></label>
+                        
+                        
+                        </div>
+                        <div>
+                            <label class="font-medium text-lg md:text-xl ">
+                        Clothes:
+                            <input type="text" class="text-[#000] text-lg font-medium outline-none
+                            bg-[#DCDCDC]
+                            rounded-sm ml-2 mt-2 mb-5 py-2 px-4" id="clothes-Amount" ></label>
+                        </div>
+               <button class="bg-[#59A5FF] rounded h-14 w-5/12 shadow-md mb-5 text-2xl font-bold text-center text-white block mx-auto px-14 w-[200px]  py-3 " id="calculate-Btn">Calculate</button>
+            
+                <p class=" text-center font-medium mt-7 text-lg md;text-2xl" id="total-Expanse">Total Expanse :</p>
+                <p class="text-center font-medium mt-7 text-lg md;text-2xl" id="total-Balance">Balance :</p>
+
+                
+                    <label class="font-medium text-lg md:text-xl ">Save:
+                    <input type="text" class="text-[#000] font-sm outline-none
+                    bg-[#DCDCDC]
+                    rounded-sm my-8 mx-4 w-44 h-11 text-center py-2 mb-7 mt-5 ml-2" id="save-Input"><span>%</span>
+                    <button class="bg-[#59A5FF] rounded-sm h-11 w-44 my-8 font-bold text-white ml-5" id="save-Btn">Save</button>
+                </label>
+                 <p class="text-lg font-semibold md:text-2xl text-center mt-1" id="save-Amount">Saving Amount :</p>
+                    <p class="text-lg font-semibold md:text-2xl text-center mt-3" id="remaining-Balance">Remaining Balance :</p>
+                </div>
+                
+        </section>
+        <script src="app.js"></script>
+    
+</body>
+</html>
